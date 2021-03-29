@@ -28,9 +28,8 @@ public class covid19DataTest {
                                                        expectStatusCode(200).
                                                        build();
     static String param_country = "Italy";
+    
 
-
-    @Ignore
     @Test
     public void testGetLatestForCountryByUsingCode() {
         response = Covid19Data.getLatestCountryDataByCode(reqSpec(), "it")
