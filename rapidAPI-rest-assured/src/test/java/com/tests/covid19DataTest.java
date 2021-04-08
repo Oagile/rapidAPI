@@ -30,6 +30,7 @@ public class covid19DataTest {
     static String param_country = "Italy";
 
 
+    @Ignore
     @Test
     public void testGetLatestForCountryByUsingCode() {
         response = Covid19Data.getLatestCountryDataByCode(reqSpec(), "it")
