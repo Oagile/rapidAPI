@@ -28,7 +28,7 @@ public class covid19DataTest {
                                                        expectStatusCode(200).
                                                        build();
     static String param_country = "Italy";
-    
+
 
     @Test
     public void testGetLatestForCountryByUsingCode() {
@@ -39,6 +39,7 @@ public class covid19DataTest {
         Assert.assertThat(String.valueOf(response.get("country").toString()), CoreMatchers.containsString(param_country));
         Assert.assertThat(String.valueOf(response.get("code").toString()), CoreMatchers.containsString("IT"));
     }
+    
     @Test
     public void testGetLatestForCountryByUsingName() {
 
