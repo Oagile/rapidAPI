@@ -23,4 +23,4 @@ jobs:
     - name: Build Rest Assured tests 
       run: mvn clean test --file rapidAPI-rest-assured/pom.xml
     - name: Build Karate Tests with Maven
-      run: mvn test -Dtest=TestRunner  --file apidAPI-karate/pom.xml
+      run: mvn test -Dtest=TestRunner  --file rapidAPI-karate/pom.xml
