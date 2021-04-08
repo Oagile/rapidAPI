@@ -21,6 +21,6 @@ jobs:
       with:
         java-version: 1.8
     - name: Build Rest Assured tests 
-      run: mvn clean test --file rapidAPI-rest-assured/pom.xml
+      run: mvn clean test -Denv=test --file rapidAPI-rest-assured/pom.xml
     - name: Build Karate Tests with Maven
       run: mvn test -Dtest=TestRunner  --file rapidAPI-karate/pom.xml
